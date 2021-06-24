@@ -13,5 +13,20 @@ namespace obligatorio.Presentacion
         {
 
         }
+
+        protected void btnAlta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnBaja_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
