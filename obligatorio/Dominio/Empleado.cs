@@ -68,10 +68,13 @@ namespace obligatorio.Dominio
             Usuario = pUsuario;
             Contrasena = pContrasena;
         }
-
         public Empleado(int pid)
         {
             Id = pid;
+        }
+        public Empleado()
+        {
+
         }
     }
 }

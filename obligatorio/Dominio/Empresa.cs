@@ -29,40 +29,81 @@ namespace obligatorio.Dominio
             return _listaViajes;
         }
 
-        // to do -> los menus, switch con funcion y llamar a la clase con la funcion
+        // to do -> los menus, switch con funcion y llamar a la clase con la funcion -> 24/6 done
 
         public bool MenuCamion(string pFuncion, Camion unCamion)
         {
-            return false;
+            switch (pFuncion)
+            {
+                case "alta":
+                    return new Camion().AltaCamion(unCamion);
+                case "baja":
+                    return new Camion().BajaCamion(unCamion);
+                case "modificar":
+                    return new Camion().ModificarCamion(unCamion);
+                default:
+                    return false;
+
+            }
         }
         public bool MenuCamionero(string pFuncion, Camionero unCamionero)
         {
-            return true;
+            switch (pFuncion)
+            {
+                case "alta":
+                    return new Camionero().AltaCamionero(unCamionero);
+                case "baja":
+                    return new Camionero().BajaCamionero(unCamionero);
+                case "modificar":
+                    return new Camionero().ModificarCamionero(unCamionero);
+                default:
+                    return false;
+            }
         }
         public bool MenuAdmin(string pFuncion, Administrador unAdmin)
         {
-            return false;
+            switch (pFuncion)
+            {
+                case "alta":
+                    return new Administrador().AltaAdmin(unAdmin);
+                case "baja":
+                    return new Administrador().BajaAdmin(unAdmin);
+                case "modificar":
+                    return new Administrador().ModificarAdmin(unAdmin);
+                default:
+                    return false;
+            }
         }
         public bool MenuViaje(string pFuncion, Viaje unViaje)
         {
-            return true;
+            switch (pFuncion)
+            {
+                case "alta":
+                    return new Viaje().AltaViaje(unViaje);
+                case "baja":
+                    return new Viaje().BajaViaje(unViaje);
+                case "modificar":
+                    return new Viaje().ModificarViaje(unViaje);
+                default:
+                    return false;
+            }
         }
 
         public Camion BuscarCamion(Camion unCamion)
         {
-            return new Camion(unCamion.Id).BuscarCamion(unCamion);
+            return new Camion().BuscarCamion(unCamion);
         }
         public Camionero BuscarCamionero(Camionero unCamionero)
         {
-            return new Camionero(unCamionero.Id).BuscarCamionero(unCamionero);
+            return new Camionero().BuscarCamionero(unCamionero);
         }
         public Administrador BuscarAdministrador(Administrador unAdmin)
         {
-            return new Administrador(unAdmin.Id).BuscarAdmin(unAdmin);
+            return new Administrador().BuscarAdmin(unAdmin);
         }
         public Viaje BuscarViaje(Viaje unViaje)
         {
-            return new Viaje(unViaje.Id).BuscarViaje(unViaje);
+            return new Viaje().BuscarViaje(unViaje);
         }
     }
 }

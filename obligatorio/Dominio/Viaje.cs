@@ -88,7 +88,7 @@ namespace obligatorio.Dominio
                 return true;
             return false;
         }
-        public bool ModificarCliente(Viaje unViaje)
+        public bool ModificarViaje(Viaje unViaje)
         {
             int num = new Random().Next();
             if (num == 1)
@@ -116,10 +116,13 @@ namespace obligatorio.Dominio
             FechaFin = pFechaFin;
             Estado = pEstado;
         }
-
         public Viaje(int pId)
         {
             Id = pId;
+        }
+        public Viaje()
+        {
+
         }
     }
 }

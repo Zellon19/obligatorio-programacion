@@ -76,10 +76,13 @@ namespace obligatorio.Dominio
             Matricula = pMatricula;
             Ano = pAno;
         }
-
         public Camion(int pId)
         {
             Id = pId;
+        }
+        public Camion()
+        {
+
         }
     }
 }

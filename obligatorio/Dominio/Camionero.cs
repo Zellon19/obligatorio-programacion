@@ -63,9 +63,12 @@ namespace obligatorio.Dominio
             TipoLibreta = pTipoLibreta;
             FechaVencimiento = pFechaVencimiento;
         }
-
         public Camionero(int pId):
             base(pId)
+        {
+
+        }
+        public Camionero()
         {
 
         }

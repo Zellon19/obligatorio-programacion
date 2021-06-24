@@ -41,9 +41,12 @@ namespace obligatorio.Dominio
         {
 
         }
-
         public Administrador(int pId):
             base(pId)
+        {
+
+        }
+        public Administrador()
         {
 
         }
