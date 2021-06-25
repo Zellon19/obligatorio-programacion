@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Gestión Camionera "Camioncito Feroz"</title>
+    <title><%: Page.Title %> - Gestión "Camioncito Feroz"</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -46,13 +46,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    Camionera &quot;Camión Feroz&quot;</div>
+                    <p style="font-size:x-large; color: #10f4f3">
+                        Camionera &quot;Camión Feroz&quot;
+                    </p>
+                </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Presentacion/Default">Inicio</a></li>
-                        <li><a runat="server" href="~/Presentacion/About">Sobre nosotros</a></li>
-                        <li><a runat="server" href="~/Presentacion/Contact">Contacto</a></li>
-                        <li><a runat="server" href="~/Presentacion/Empleados">Empleados</a></li>
+                        <li><a runat="server" href="~/Presentacion/Default.aspx">Inicio</a></li>
+                        <li><a runat="server" href="~/Presentacion/About.aspx">Sobre nosotros</a></li>
+                        <li><a runat="server" href="~/Presentacion/Contact.aspx">Contacto</a></li>
+                        <li><a runat="server" href="~/Presentacion/Camioneros.aspx">Camioneros</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
