@@ -212,7 +212,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Presentacion\Camioneros.aspx" />
+    <Content Include="Presentacion\Empleados.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -412,11 +412,11 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Presentacion\Empleados.aspx.cs">
-      <DependentUpon>Camioneros.aspx</DependentUpon>
+      <DependentUpon>Empleados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Presentacion\Empleados.aspx.designer.cs">
-      <DependentUpon>Camioneros.aspx</DependentUpon>
+      <DependentUpon>Empleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
