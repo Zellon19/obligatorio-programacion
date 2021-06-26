@@ -46,7 +46,7 @@ namespace obligatorio.Dominio
 
             }
         }
-        public bool MenuCamionero(string pFuncion, Camionero unCamionero)
+        public bool MenuCamionero(string pFuncion, Empleado unCamionero)
         {
             switch (pFuncion)
             {
@@ -93,7 +93,7 @@ namespace obligatorio.Dominio
         {
             return new Camion().BuscarCamion(unCamion);
         }
-        public Camionero BuscarCamionero(Camionero unCamionero)
+        public Empleado BuscarCamionero(Empleado unCamionero)
         {
             return new Camionero().BuscarCamionero(unCamionero);
         }

@@ -57,9 +57,8 @@ namespace obligatorio.Dominio
             set { _contrasena = value; }
         }
 
-        public Empleado(int pId, string pNombre, string pApellido, string pCedula, string pCargo, string pTelefono, string pUsuario, string pContrasena)
+        public Empleado(string pNombre, string pApellido, string pCedula, string pCargo, string pTelefono, string pUsuario, string pContrasena)
         {
-            Id = pId;
             Nombre = pNombre;
             Apellido = pApellido;
             Cedula = pCedula;

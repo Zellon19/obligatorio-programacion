@@ -27,28 +27,28 @@ namespace obligatorio.Dominio
             set { _fechaVencimiento = value; }
         }
 
-        public bool AltaCamionero(Camionero unCamionero)
+        public bool AltaCamionero(Empleado unCamionero)
         {
             int num = new Random().Next();
             if (num == 1)
                 return true;
             return false;
         }
-        public bool BajaCamionero(Camionero unCamionero)
+        public bool BajaCamionero(Empleado unCamionero)
         {
             int num = new Random().Next();
             if (num == 1)
                 return true;
             return false;
         }
-        public bool ModificarCamionero(Camionero unCamionero)
+        public bool ModificarCamionero(Empleado unCamionero)
         {
             int num = new Random().Next();
             if (num == 1)
                 return true;
             return false;
         }
-        public Camionero BuscarCamionero(Camionero unCamionero)
+        public Empleado BuscarCamionero(Empleado unCamionero)
         {
             int num = new Random().Next();
             if (num == 1)
@@ -56,17 +56,12 @@ namespace obligatorio.Dominio
             return null;
         }
 
-        public Camionero(int pId, string pNombre, string pApellido, string pCedula, string pCargo, string pTelefono, string pUsuario, string pContrasena, int pEdad, string pTipoLibreta, DateTime pFechaVencimiento):
-            base(pId, pNombre, pApellido, pCargo, pCargo, pTelefono, pUsuario, pContrasena)
+        public Camionero(string pNombre, string pApellido, string pCedula, string pCargo, string pTelefono, string pUsuario, string pContrasena, int pEdad, string pTipoLibreta, DateTime pFechaVencimiento):
+            base(pNombre, pApellido, pCargo, pCargo, pTelefono, pUsuario, pContrasena)
         {
             Edad = pEdad;
             TipoLibreta = pTipoLibreta;
             FechaVencimiento = pFechaVencimiento;
-        }
-        public Camionero(int pId):
-            base(pId)
-        {
-
         }
         public Camionero()
         {
