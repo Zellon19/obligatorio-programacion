@@ -49,6 +49,15 @@ namespace obligatorio.Presentacion {
         protected global::System.Web.UI.WebControls.TextBox InputPosition;
         
         /// <summary>
+        /// InputTelefono control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox InputTelefono;
+        
+        /// <summary>
         /// InputUser control.
         /// </summary>
         /// <remarks>
@@ -85,13 +94,13 @@ namespace obligatorio.Presentacion {
         protected global::System.Web.UI.WebControls.TextBox InputTipoLibreta;
         
         /// <summary>
-        /// InputFechaVen control.
+        /// InputFechaVencimiento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox InputFechaVen;
+        protected global::System.Web.UI.WebControls.Calendar InputFechaVencimiento;
         
         /// <summary>
         /// rdbCamionero control.
