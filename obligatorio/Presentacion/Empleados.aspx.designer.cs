@@ -67,22 +67,49 @@ namespace obligatorio.Presentacion {
         protected global::System.Web.UI.WebControls.TextBox InputPass;
         
         /// <summary>
-        /// rdoEmpleado control.
+        /// InputEdad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoEmpleado;
+        protected global::System.Web.UI.WebControls.TextBox InputEdad;
         
         /// <summary>
-        /// rdoAdministrador control.
+        /// InputTipoLibreta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoAdministrador;
+        protected global::System.Web.UI.WebControls.TextBox InputTipoLibreta;
+        
+        /// <summary>
+        /// InputFechaVen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox InputFechaVen;
+        
+        /// <summary>
+        /// rdbCamionero control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdbCamionero;
+        
+        /// <summary>
+        /// rdbAdministrador control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rdbAdministrador;
         
         /// <summary>
         /// btnAlta control.

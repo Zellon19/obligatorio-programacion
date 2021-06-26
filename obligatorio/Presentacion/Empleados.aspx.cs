@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using obligatorio.Dominio;
 
 namespace obligatorio.Presentacion
 {
@@ -12,39 +11,19 @@ namespace obligatorio.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             
         }
 
-        private bool faltanDatos()
+        private void MostrarCampos()
         {
-            if (this.InputDocument.Text == "" || this.InputName.Text == "" || this.InputPass.Text == "" || this.InputPosition.Text == "" || this.InputSecondName.Text == "" || this.InputUser.Text == ""|| (!this.rdoAdministrador.Checked || !this.rdoEmpleado.Checked))
-                return true;
-            return false;   
-        }
-
-        protected void btnAlta_Click(object sender, EventArgs e)
-        {
-            if (!faltanDatos())
+            if (this.rdbCamionero.Checked == true)
             {
-                Empresa empresa = new Empresa();
-                // crear objeto (?) y mandar al menú
+                this.InputEdad.Visible = true;
+                this.InputTipoLibreta.Visible = true;
+                this.InputFechaVen.Visible = true;
             }
+         
         }
-
-        protected void btnBaja_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnModificar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnLimpiar_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
